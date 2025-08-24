@@ -47,11 +47,11 @@ public class PasswordResetService {
     }
 
     private void sendPasswordResetEmail(String toEmail, String token) {
-        String resetUrl = "http://localhost:5173/reset-password?token=" + token; 
+        String resetUrl = "https://techlynxinnovationspvtltd.netlify.app/reset-password?token=" + token; 
         // change this to your frontend URL
 
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("pyogeswar.techlynxinnovations@gmail.com"); // must match spring.mail.username
+        message.setFrom("info.techlynxinnovations@gmail.com"); // must match spring.mail.username
         message.setTo(toEmail);
         message.setSubject("Password Reset Request - Techlynx Innovations Pvt. Ltd");
         message.setText(
