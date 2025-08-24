@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/careers/graduates")
+@CrossOrigin(origins = "https://techlynxinnovationspvtltd.netlify.app")
 public class GraduateApplicationController {
 
     private final GraduateApplicationService applicationService;

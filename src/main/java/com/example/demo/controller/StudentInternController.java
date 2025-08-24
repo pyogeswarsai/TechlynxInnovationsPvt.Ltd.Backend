@@ -14,7 +14,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/careers/intern")
-@CrossOrigin(origins = "http://localhost:5173")  // React frontend URL
+@CrossOrigin(origins = "https://techlynxinnovationspvtltd.netlify.app")
 public class StudentInternController {
 
     @Autowired
