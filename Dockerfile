@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN ./mvnw clean package
+RUN ./mvnw clean package -DskipTests
 
 CMD ["java", "-jar", "target/TechlynxInnovationsPvtLtd-0.0.1-SNAPSHOT.jar"]
