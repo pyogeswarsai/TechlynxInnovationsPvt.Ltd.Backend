@@ -21,6 +21,7 @@ public class PasswordResetService {
 
     @Autowired
     private JavaMailSender mailSender;
+    
 
     @Autowired
     public PasswordResetService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
@@ -47,7 +48,7 @@ public class PasswordResetService {
     }
 
     private void sendPasswordResetEmail(String toEmail, String token) {
-        String resetUrl = "https://techlynxinnovationspvtltd.netlify.app/api/auth/reset-password?token=" + token; 
+        String resetUrl = "https://techlynxinnovationspvtltd.netlify.app/reset-password?token=" + token; 
         // change this to your frontend URL
 
         SimpleMailMessage message = new SimpleMailMessage();
